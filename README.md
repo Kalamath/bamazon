@@ -8,7 +8,7 @@
 
 ### GIF
 
-![Liri Bot](https://github.com/Kalamath/liri-node-app/blob/master/screenshot/Liri.gif)
+![Bamazon](https://github.com/Kalamath/bamazon/blob/master/assets/Liri.gif)
 
 ### What Was Used
 
