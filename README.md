@@ -28,4 +28,4 @@
 
 * Martell Harding
 
-![robo](https://github.com/Kalamath/liri-node-app/blob/master/assets/greatdeals.gif)
+![greatDeals](https://github.com/Kalamath/bamazon/blob/master/assets/greatdeals.gif)
