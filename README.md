@@ -4,7 +4,7 @@
 
 1. Clone repo
 2. Run `npm install`
-3. At command prompt run `node liri.js Liri <pass in an instruction from above>`
+3. At command prompt run `node bamazonCustomer.js`
 
 ### GIF
 
@@ -14,15 +14,9 @@
 
 * NodeJS
 * JavaScript
-* Spotify API
-* OMDB API
-* Bands In Town API
-* NPM node-spotify-api
-* NPM axios
-* NPM dotenv
-* NPM moment
-* NPM fs
-* NPM request
+* NPM mysql
+* NPM inquirer
+* NPM cli-table
 
 ### Coder
 
