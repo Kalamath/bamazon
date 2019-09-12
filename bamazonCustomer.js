@@ -36,12 +36,6 @@ connection.query('SELECT * FROM products', function (error, results, fields) {
 
 connection.end();
 
-// connection.connect(function (err) {
-//     if (err) throw err;
-//     productView();
-//     // runSearch();
-// });
-
 // var item;
 
 function productView() {
@@ -80,9 +74,46 @@ function buyItem() {
             message: "Would you like to purchase an item? (Hit Enter for YES)",
         })
         .then(answers => {
+            console.log("\n Awesome!")
 
+            whichItem();
         })
 }
+
+function whichItem() {
+    inquirer
+        .prompt({
+            type: 'expand',
+            name: 'theme',
+            message: 'Which Product Would You Like to Buy?',
+            choices: [
+               { 
+                   key : '1',
+                   name : 'Beats Wireless Buds',
+                   value: 'results[0].item_id, results[0].product_name, results[0].price',
+                },
+               { 
+                   key : '2',
+                   name : 'PS4',
+                   value: 'results[1].item_id, results[1].product_name, results[1].price',
+                },
+               { 
+                   key : '3',
+                   name : 'Nintendo Switch',
+                   value: 'results[2].item_id, results[2].product_name, results[2].price',
+                },
+                
+            ]
+        })
+        .then(answers => {
+            console.log(answers);
+        })
+}
+
+
+
+
+
 
 
 
