@@ -44,10 +44,10 @@ function buyItem() {
         .then(answers => {
             if (answers.toBuy === "BUY") {
                 whichItem();
-                console.log("\n Shweet :) \n");
+                console.log("\nShweet :) \n");
             } else {
                 connection.end();
-                console.log("\n That's too bad :(");
+                console.log("\nThat's too bad :(");
             }
         })
 }
@@ -85,23 +85,25 @@ function whichItem() {
                             var totalCost = (cost * amount).toFixed(2);
                             var newInventory = quantity - amount;
 
-                            console.log("\n Your total will be " + "$" + totalCost + "\n");
                             inquirer
-                                .prompt({
-                                    name: "checkout",
+                            .prompt({
+                                name: "checkout",
                                     type: "confirm",
                                     message: "Would you like to check out? \n"
                                 })
                                 .then((answers) => {
-                                    if (answers.checkout) {
+                                    if (quantity < amount) {
+                                        console.log("\nSorry we only have " + result.stock_quantity + " left :(\n");
+                                        whichItem();
+                                    } else if (quantity > amount, answers.checkout) {
+                                        console.log("\nYour total will be " + "$" + totalCost + "\n");
                                         inventoryUpdate(newInventory, itemID);
                                     }
                                 })
                             // console.log(newInventory);
                         }
-                    }
-                )
-                // connection.end();
+                    })
+
             })
     })
 }
@@ -112,6 +114,7 @@ function inventoryUpdate(newInventory, itemID) {
         { stock_quantity: newInventory },
         function (err, res) {
             if (err) throw err;
+            console.log("\nThanks for shopping with Bamazon!");
         });
     connection.end();
 }
