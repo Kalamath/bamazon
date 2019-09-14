@@ -6,7 +6,7 @@
 2. Run `npm install`
 3. At command prompt run `node bamazonCustomer.js`
 
-### GIF
+### GIF - Bamazon Customer
 
 ![Bamazon](https://github.com/Kalamath/bamazon/blob/master/assets/bamazonCustomer.gif)
 
