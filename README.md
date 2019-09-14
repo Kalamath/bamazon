@@ -16,7 +16,6 @@
 * JavaScript
 * NPM mysql
 * NPM inquirer
-* NPM cli-table
 
 ### Coder
 
