@@ -8,7 +8,7 @@
 
 ### GIF
 
-![Bamazon](https://github.com/Kalamath/bamazon/blob/master/assets/Liri.gif)
+![Bamazon](https://github.com/Kalamath/bamazon/blob/master/assets/bamazonCustomer.gif)
 
 ### What Was Used
 
